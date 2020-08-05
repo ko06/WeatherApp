@@ -10,7 +10,7 @@ weatherForm.addEventListener('submit', (e) => {
   const location = search.value
 debugger
 
-  fetch('http://localhost:3003/weather?address=' + location).then((response) => {
+  fetch('/weather?address=' + location).then((response) => {
     response.json().then((data) => {
       debugger
       if (data.error) {
