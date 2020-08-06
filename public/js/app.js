@@ -8,7 +8,6 @@ weatherForm.addEventListener('submit', (e) => {
 
   console.log('testing')
   const location = search.value
-debugger
 
   fetch('/weather?address=' + location).then((response) => {
     response.json().then((data) => {
